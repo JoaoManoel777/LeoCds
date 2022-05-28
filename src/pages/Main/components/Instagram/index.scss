@@ -1,0 +1,25 @@
+#main {
+    
+    .instagram-wallpaper-section {
+        max-width: 1536px;
+
+        #instagram-wallpaper {
+            width: 100%;
+            height: 180px;
+            background-color: $gray-2;
+            margin: 20px 0px;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    #main {
+    
+        .instagram-wallpaper-section {
+    
+            #instagram-wallpaper {
+                height: 140px;
+            }
+        }
+    }
+}

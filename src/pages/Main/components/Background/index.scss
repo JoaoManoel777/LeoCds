@@ -1,0 +1,23 @@
+#main {
+    
+    .background-section {
+        max-width: 1536px;
+
+        #wallpaper-container {
+            height: 200px;
+            background-color: $gray-2;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    #main {
+    
+        .background-section {
+    
+            #wallpaper-container {
+                height: 150px;
+            }
+        }
+    }
+}

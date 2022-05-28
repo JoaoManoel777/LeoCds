@@ -1,0 +1,50 @@
+@import './components/Title/index.scss';
+@import './components/Highlights/index.scss';
+@import './components/Instagram/index.scss';
+@import './components/NewCds/index.scss';
+@import './components/Recommended/index.scss';
+@import './components/Tops/index.scss';
+@import './components/Background/index.scss';
+
+#main {
+    .all-widths {
+        width: 1360px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1439px) {
+    #main {
+        .all-widths {
+            width: 964px;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    #main {
+        .all-widths {
+            width: 700px;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    #main {
+        .all-widths {
+            width: 500px;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    #main {
+        .all-widths {
+            width: 310px;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+@import "../../../../../../styles/variables";
+
+#preview {
+    position: relative;
+
+    width: 250px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    #slide--preview {
+        position: relative;
+        top: -183px;
+        display: flex;
+        flex-direction: column;
+        gap: 6%;
+    
+        transition: all ease-in-out .8s;
+    
+        height: 100%;
+    }
+
+    img {
+        height: 163px;
+        width: 100%;
+    
+        object-fit: cover;
+    }
+
+    button {
+        position: absolute;
+        left: 40%;
+        transform: translateX(-50%);
+
+        border: none;
+        border-radius: 10%;
+        outline: none;
+
+        font-size: 2em;
+        font-weight: bold;
+
+        background-color: transparent;
+        color: $black;
+    
+        width: 50px;
+        height: 50px;
+
+        cursor: pointer;
+        z-index: 2;
+
+        &:hover {
+            transition: .5s;
+
+            background-color: $black_opacy;
+        }
+    }
+
+    .next--preview {
+        top: 1.5%;
+
+        transform: rotate(90deg);
+    }
+
+    .before--preview {
+        top: 83.8%;
+
+        transform: rotate(-90deg);
+    }
+}
+
+#preview--mobile {
+    position: relative;
+
+    width: 500px;
+    height: 163px;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+    #slide--preview {
+        position: relative;
+        left: -255px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+    
+        transition: all ease-in-out .8s;
+    
+        height: 100%;
+    }
+
+    img {
+        height: 163px;
+        width: 100%;
+    
+        object-fit: cover;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        border: none;
+        border-radius: 10%;
+        outline: none;
+
+        font-size: 2em;
+        font-weight: bold;
+
+        background-color: transparent;
+        color: $black;
+    
+        width: 50px;
+        height: 50px;
+
+        cursor: pointer;
+        z-index: 2;
+
+        &:hover {
+            transition: .5s;
+
+            background-color: $black_opacy;
+        }
+    }
+
+    .next--preview {
+        left: 1.5%;
+    }
+
+    .before--preview {
+        right: 1.5%;
+    }
+}

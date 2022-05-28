@@ -1,0 +1,80 @@
+.search-section {
+
+    .all-widths {
+        width: 1300px;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    hr {
+        width: 100%;
+        max-width: 1300px;
+        height: 4px;
+        background-color: $principal;
+        border: none;
+        margin: auto;
+    } 
+
+    .search {
+
+        span {
+            font-size: 42px;
+            color: $gray-7;
+        }
+    }
+
+    .album-container {
+        padding: 40px 0;
+        margin: auto;
+        display: flex;
+    
+        .cover-img-container {
+            width: 250px;
+            margin-right: 20px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .album-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 40px;
+    
+            .album-title {
+                color: $gray-11;
+                font-family: 'Konnect_Bold';
+                font-size: 80px;
+            }
+    
+            .album-size {
+                display: flex;
+                align-items: center;
+    
+                span {
+                    font-size: 22px;
+                }
+    
+                .album-megabytes {
+                    padding: 5px;
+                    background-color: rgb(240, 35, 97);
+                    border-radius: 6px;
+                    color: $white;
+                    margin-left: 5px;
+                }
+            }
+    
+            .artist-name {
+                display: flex;
+                align-items: center;
+                
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    
+}

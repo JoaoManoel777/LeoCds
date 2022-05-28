@@ -1,0 +1,192 @@
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    .header-wallpaper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: $white;
+
+        .container {
+            position: relative;
+            width: 1360px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            a {
+                text-decoration: none;
+                color: $gray-10;
+
+                span {
+                    font-size: 28px;
+                }
+            }
+
+            .search-container {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 300px;
+
+                input {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 25px;
+                    padding: 0px 5px;
+                    border: 2px solid $gray-5;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    font-family: 'Konnect_Light';
+                    color: $gray-9;
+                    background-image: none;
+    
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::-webkit-search-cancel-button {
+                        -webkit-appearance: none;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .navigation-wallpaper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: $principal;
+
+        nav {        
+            width: 1360px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            ul {
+                display: flex;
+                list-style: none;
+            }
+
+            li:nth-child(2) {
+                margin: 0px 30px;
+              }
+    
+            li {
+    
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+
+                    
+                    &::after {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                        background-image: url('../../assets/svg/Arrow-Down.svg');
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    header {
+
+        .header-wallpaper {
+
+            .container {
+                width: 964px;
+            }
+        }
+        .navigation-wallpaper {
+
+            nav {
+                width: 964px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    header {
+
+        .header-wallpaper {
+
+            .container {
+                width: 700px;
+            }
+        }
+        .navigation-wallpaper {
+
+            nav {
+                width: 700px;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+
+        .header-wallpaper {
+
+            .container {
+                width: 500px;
+                
+                .search-container {
+                    position: relative;
+                    left: 0px;
+                    transform: translateX(0);
+                    width: 200px;
+                }
+            }
+        }
+        .navigation-wallpaper {
+
+            nav {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+
+        .header-wallpaper {
+
+            .container {
+                width: 310px;
+
+                span {
+                    font-size: 26px;
+                }
+            }
+        }
+        .navigation-wallpaper {
+
+            nav {
+                width: 310px;
+            }
+        }
+    }
+}
