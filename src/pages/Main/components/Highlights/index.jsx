@@ -1,30 +1,35 @@
 import React from 'react'
+
 import Title from '../Title'
-import Capa from '../../../../assets/imgs/Capa.jpg'
+import Slide from './components/Slide'
+
+import image1 from '../../../../assets/imgs/café.jpg'
+import image2 from '../../../../assets/imgs/cafeitaria.jpg'
+import image3 from '../../../../assets/imgs/hora_do_café.jpg'
 
 const Highlights = () => {
   return (
     <section className='all-widths highlights-section'>
           <Title text={'DESTAQUES'} />
-          <div id='slide'>
-            <div id='main-slide-img'>
-                <img src={ Capa } alt="" />
-                <img src={ Capa } alt="" />
-                <img src={ Capa } alt="" />
-            </div>
-            <div id='slide-imgs'>
-              <div id='img-container-1'>
-                <img src={ Capa } alt="" />
-                <img src={ Capa } alt="" />
-                <img src={ Capa } alt="" />
-              </div>
-              <div id='img-container-2'>
-                <img src={ Capa } alt="" />
-                <img src={ Capa } alt="" />
-                <img src={ Capa } alt="" />
-              </div>
-            </div>
-          </div>
+          <Slide albums={
+            [
+              {
+                image: image1,
+                title: 'undefined',
+                id: 1
+              },
+              {
+                image: image2,
+                title: 'undefined',
+                id: 2
+              },
+              {
+                image: image3,
+                title: 'undefined',
+                id: 3
+              }
+            ]
+          }/>
         </section>
   )
 }
